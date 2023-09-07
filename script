@@ -11,7 +11,7 @@ Arrays  | Designing + Programming + New Features
 ]]
 
 
-
+print("testing")
 local Release = "Release 2A"
 local NotificationDuration = 6.5
 local ArrayFieldFolder = "TemHubV4"
@@ -1409,7 +1409,7 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 					end)
 					wait(0.51)
 					Passthrough = true
-					if Settings.KeySettings.SaveKey then
+					if Settings.KeySettings.SaveKey == true then
 						if writefile then
 							writefile(ArrayFieldFolder.."/Key System".."/"..Settings.KeySettings.FileName..ConfigurationExtension, Settings.KeySettings.Key)
 						end
